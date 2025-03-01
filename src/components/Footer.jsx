@@ -80,7 +80,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="text-center text-sm mt-8 border-t pt-4 border-gray-300 dark:border-gray-600">
-        <p>&copy; {new Date().getFullYear()} YourBrand. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} DevPixel.Studio All rights reserved.</p>
       </div>
     </motion.footer>
   );
