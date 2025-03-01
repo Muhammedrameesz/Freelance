@@ -97,7 +97,7 @@ export default function ServicesList() {
                 animate={
                   hover === index ? { rotateY: [0, 180, 0] } : { rotateY: 0 }
                 }
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
                 className={`text-3xl p-5 rounded-full shadow-md transition-colors duration-300 
                   ${hover!==index && theme === "dark" && "bg-black text-[#66ff00] shadow-[#66ff00]"}
                   ${hover!==index && theme !=="dark" &&  "bg-white text-[#66ff00] shadow-gray-400"}
