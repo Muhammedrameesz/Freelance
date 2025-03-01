@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-doto:Doto,"sans-serif";
+  --font-jost:Jost,"sans-serif";
+  --font-montserrat:Montserrat,"sans-serif";
+  --font-helvetica:Helvetica,"sans-serif";
+  --font-alfa:Alfa Slab One,"sans-serif";
+  --font-marcellus:Marcellus,"sans-serif";
+  --font-oswald:Oswald,"sans-serif";
+
+  --color-customGreen:#66ff00;
+  
+  --shadow-custom:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow-normal:rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  --shadow-base:rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+:root {
+  --font-primary: 'Marcellus', sans-serif;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary); 
+}
+
+/* Headings and general typography */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
