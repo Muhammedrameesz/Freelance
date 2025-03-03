@@ -39,8 +39,8 @@ export default function Nav() {
   return (
     <nav
       style={{ zIndex: 1000 }}
-      className={`w-full  fixed z-50 left-1/2 -translate-x-1/2 top-2 px-6 py-4 
-        max-w-7xl rounded-full transition-colors duration-300 
+      className={`w-full  fixed z-50 left-1/2 -translate-x-1/2 top-2 py-4 
+        max-w-7xl rounded-none md:rounded-full transition-colors duration-300 
         ${
           theme === "dark"
             ? "shadow-gray-500 shadow-base bg-black text-white"
@@ -59,7 +59,7 @@ export default function Nav() {
         />
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden sm:flex space-x-8">
           <motion.h2 className={`text-2xl  font-semibold  flex gap-1`}>
             {text.map((letter, index) => {
               const isSpace = letter === " ";
@@ -128,18 +128,18 @@ export default function Nav() {
           </motion.div>
 
           {/* Mobile Menu Button */}
-          <button
+          {/* <button
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Mobile Menu"
             className="md:hidden"
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          </button> */}
         </div>
       </div>
 
       {/* Mobile Menu with Animation */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {menuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -159,7 +159,7 @@ export default function Nav() {
             ))}
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </nav>
   );
 }

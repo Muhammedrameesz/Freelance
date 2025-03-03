@@ -80,14 +80,15 @@ export default function ServicesList() {
         <h2 className="text-5xl text-center font-semibold ">Our Services</h2>
       </div>
 
-      <Anim>
+      
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-10 mx-auto max-w-7xl py-10">
           {services.map((service, index) => (
+            <Anim key={index} delay={index*.2}>
             <div
               key={index}
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
-              className={`flex items-start gap-4 p-5 rounded-lg shadow-md transform transition-transform duration-300 ${
+              className={`flex min-h-[200px] items-start gap-4 p-5 rounded-lg shadow-md transform transition-transform duration-300 ${
                 hover === index ? "hover:-translate-y-2 shadow-custom" : ""
               } ${theme === "dark" ? "shadow-gray-500" : "shadow-gray-300"}`}
             >
@@ -103,8 +104,6 @@ export default function ServicesList() {
                   ${hover!==index && theme !=="dark" &&  "bg-white text-[#66ff00] shadow-gray-400"}
                   ${theme==="dark"  &&  hover===index && "bg-[#66ff00] text-black"} 
                   ${theme!=="dark"  &&  hover===index && "bg-[#66ff00] text-white "}    
-
-                
                 `}
               >
                 {service.icon}
@@ -122,9 +121,10 @@ export default function ServicesList() {
                 </p>
               </div>
             </div>
+            </Anim>
           ))}
         </div>
-      </Anim>
+      
     </section>
   );
 }
