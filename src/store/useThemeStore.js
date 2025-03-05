@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useThemeStore = create((set) => {
-  // Get stored theme from localStorage
+  
   const storedTheme = localStorage.getItem("theme");
 
   return {
@@ -10,7 +10,7 @@ const useThemeStore = create((set) => {
     toggleTheme: () =>
       set((state) => {
         const newTheme = state.theme === "dark" ? "light" : "dark";
-        localStorage.setItem("theme", newTheme); // Save theme in localStorage
+        localStorage.setItem("theme", newTheme); 
         return { theme: newTheme };
       }),
 

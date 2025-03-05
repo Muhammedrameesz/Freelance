@@ -26,7 +26,7 @@ export default function AnimatedButton({ text }) {
           initial={{ height: 0 }}
           animate={hover ? { height: "100%" } : { height: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          style={{ backgroundColor: isDark ? "#ffffff" : "#000000" }} // Dynamic bg color on hover
+          style={{ backgroundColor: isDark ? "#ffffff" : "#000000" }} 
         />
 
         {/* Text */}
